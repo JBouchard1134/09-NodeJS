@@ -1,7 +1,35 @@
-function generateMarkdown(data) {
+function generateMarkdown(data, githubInfo) {
   return `
-# ${data.title}
 
+// Title
+${data.title}
+
+// Badge
+${data.badge}
+
+// Description
+${data.description}
+
+// Installation
+${data.installation}
+
+// Usage
+${data.usage}
+
+// Licence
+${data.licence}
+
+// Contributors
+${data.contributing}
+
+// Test
+${data.test}
+
+// GitHub
+${githubInfo.githubImage})
+${githubInfo.name}
+${githubInfo.profile})
+${githubInfo.email}
 `;
 }
 
